@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main">
+
+    <ImageView
+        android:id="@+id/i_mainImage"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/leo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/t_pageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/Header1"
+        android:layout_marginTop="11dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Big cat's house"
+        app:layout_constraintTop_toBottomOf="@id/i_mainImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/e_text"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:hint="Текст баннера"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/t_pageName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/b_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:backgroundTint="@color/gold"
+        android:textColor="@color/black"
+        android:text="Notification"
+        android:onClick="b_notification"
+        app:layout_constraintTop_toBottomOf="@id/e_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:id="@+id/b_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:backgroundTint="@color/goldenrod"
+        android:textColor="@color/black"
+        android:text="Service"
+        android:onClick="b_notification"
+        app:layout_constraintTop_toBottomOf="@id/b_notification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+

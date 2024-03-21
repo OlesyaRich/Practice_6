@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Big cat`s house</string>
+    <string-array name="catTypes">
+        <item>Ирбис</item>
+        <item>Леопард</item>
+        <item>Рысь</item>
+        <item>Пума</item>
+    </string-array>
+</resources>
